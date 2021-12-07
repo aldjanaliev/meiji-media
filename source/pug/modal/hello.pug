@@ -1,0 +1,14 @@
+#helloModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title.headline-3 ПРЕИМУЩЕСТВА <span class="no-wrap">G-SYNC</span>
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true') &times;
+			.modal-body
+				.modal_input-wrap
+					input.modal_input(type='text' placeholder="Имя")
+				.modal_input-wrap
+					input.modal_input(type='mail' placeholder="Mail")
+			.modal-footer
+				button.btn.btn-secondary(type='button' data-dismiss='modal') Купить

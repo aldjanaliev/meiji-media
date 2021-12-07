@@ -1,0 +1,21 @@
+header.head
+	.container
+		.head-wrap
+			.head_logo-wrap
+				a.head_logo
+					svg.icon
+						use(xlink:href="img/sprite.svg#ic_logo")
+			.head_nav-btn.js-nav-btn 
+				.head_nav-btn-wrap
+					svg.icon
+						use(xlink:href="img/sprite.svg#ic_menu")
+			.head_menu-wrap 
+				nav.head_nav 
+					+list(["Продукты", "Технологии", "Experience"]).head_nav-list
+				.head_icons
+					a.head_ic.head_ic__tw
+						svg.icon
+							use(xlink:href="img/sprite.svg#ic_tw")
+					a.head_ic.head_ic__inst
+						svg.icon
+							use(xlink:href="img/sprite.svg#ic_inst")

@@ -1,0 +1,74 @@
+.modal{
+	&-dialog{
+		max-width: 540px;
+	}
+	&-content{
+		background: $black;
+		border: 2px solid $color-hover;
+		border-radius: 0;
+		box-shadow: 0px 0px 20px rgba(119, 185, 0, 0.5);
+		padding: 15px 30px;
+		color: $white;
+		position: relative;
+	}
+	&-header, &-footer{
+		border: none;
+		display: block;
+	}
+	&-title{
+		text-transform: uppercase;
+	}
+	.no-wrap{
+		display: inline-block;
+	}
+	.close{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		outline: none;
+		width: 20px;
+		height: 20px;
+		background: url(/img/close.svg) center no-repeat;
+		transition: 0.3s;
+		span{
+			display: none;
+		}
+		&:hover{
+			background: url(/img/close-active.svg) center no-repeat;
+		}
+	}
+	&-body{
+		padding: 3px;
+	}
+	&_input-wrap{
+		margin-bottom: 18px;
+	}
+	&_input-wrap:last-child{
+		margin-bottom: 0;
+	}
+	&_input{
+		width: 100%;
+		padding: 13px 20px;
+		outline: none;
+	}
+	.btn{
+		margin-top: 2px;
+		padding: 17.5px 60px;
+		margin-left: calc(50% - 99px);
+	}
+}
+@media screen and (min-width: 770px) {
+	.modal{
+		&-dialog{
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		}
+		&-content{
+			padding: 55px 89px 51px;
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.advantage{
+	background-image: url(/img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $white;
+	padding: 60px 0 140px;
+	&_title{
+		text-align: center;
+	}
+	&_title-head {
+		padding-bottom: 20px;
+	}
+	&_title-text{
+		max-width: 720px;
+		margin: auto;
+	}
+	.no-wrap{
+		display: inline-block;
+	}
+	&_items{
+		margin-bottom: 65px;
+	}
+	&_item{
+		padding: 32px 0 0;
+		.ic_border{
+			transition: 0.3s;
+			stroke: $white;
+		}
+		.ic_in{
+			transition: 0.3s;
+		}
+		&:hover .ic_border{
+			fill: rgba(119, 185, 0, 0.25);
+			stroke: rgba(119, 185, 0, 1);
+		}
+		&:hover .ic_in{
+			fill: rgba(119, 185, 0, 0.25);
+		}
+	}
+	&_ic-wrap &_ic__3{
+		width: 100px;
+		margin-left: 0;
+		left: 17%;
+	}
+	&_ic-wrap{
+		position: relative;
+		width: 151px;
+		height: 71px;
+		margin: auto;
+	}
+	&_ic__border{
+		width: 151px;
+		height: 71px;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	&_ic__in {
+		width: 52px;
+		height: 52px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -26px;
+		margin-top: -26px;
+	}
+	&_title-wrap{
+		text-transform: uppercase;
+		text-align: center;
+		padding: 37px 0 12px;
+	}
+	&_title__green{
+		margin-right: 8px;
+		color: $color-hover;
+	}
+	&_text{
+		color: #E1E1E1;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.advantage{
+		&_items{
+			display: flex;
+			justify-content: space-between;
+			margin: 28px -15px 37px;
+		}
+		&_item{
+			margin: 0 15px;
+			width: 25%;
+		}
+		&_title-wrap{
+			text-align: left;
+		}
+	}
+}

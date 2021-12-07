@@ -1,0 +1,5 @@
+mixin list(values)
+	ul(class!=attributes.class)
+		each val in values
+			li.list-item 
+				a.list-item_link(href="#")= val
